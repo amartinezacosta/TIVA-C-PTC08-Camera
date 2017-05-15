@@ -13,7 +13,7 @@
 #include "driverlib/interrupt.h"
 #include "buffer.h"
 
-#define UART5_BUFFER_SIZE   240
+#define UART5_BUFFER_SIZE   1024
 
 void UART5_Init(void);
 uint32_t UART5_ReadBytes(uint8_t *bytes, uint32_t size);

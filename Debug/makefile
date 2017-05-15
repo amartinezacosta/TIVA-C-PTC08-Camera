@@ -16,6 +16,7 @@ ORDERED_OBJS += \
 "./timer.obj" \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "./uart.obj" \
+"./uartstdio.obj" \
 "../tm4c123gh6pm.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibc.a \
@@ -146,7 +147,7 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 PTC08_Camera.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: ARM Linker'
-	"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"PTC08_Camera.map" --heap_size=0 --stack_size=1024 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/lib" -i"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="PTC08_Camera_linkInfo.xml" --rom_model -o "PTC08_Camera.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 -me --define=ccs="ccs" --define=PART_TM4C123GH6PM -g --gcc --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi -z -m"PTC08_Camera.map" --heap_size=0 --stack_size=2048 -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/lib" -i"C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug" -i"C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="PTC08_Camera_linkInfo.xml" --rom_model -o "PTC08_Camera.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -159,8 +160,8 @@ PTC08_Camera.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "PTC08.obj" "buffer.obj" "main.obj" "timer.obj" "tm4c123gh6pm_startup_ccs.obj" "uart.obj" 
-	-$(RM) "PTC08.d" "buffer.d" "main.d" "timer.d" "tm4c123gh6pm_startup_ccs.d" "uart.d" 
+	-$(RM) "PTC08.obj" "buffer.obj" "main.obj" "timer.obj" "tm4c123gh6pm_startup_ccs.obj" "uart.obj" "uartstdio.obj" 
+	-$(RM) "PTC08.d" "buffer.d" "main.d" "timer.d" "tm4c123gh6pm_startup_ccs.d" "uart.d" "uartstdio.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

@@ -3,6 +3,8 @@
 PTC08.obj: ../PTC08.c
 PTC08.obj: ../PTC08.h
 PTC08.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdint.h
+PTC08.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/string.h
+PTC08.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/linkage.h
 PTC08.obj: ../uart.h
 PTC08.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdbool.h
 PTC08.obj: C:/ti/TivaWare_C_Series-2.1.3.156/inc/hw_memmap.h
@@ -16,10 +18,14 @@ PTC08.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/interrupt.h
 PTC08.obj: ../buffer.h
 PTC08.obj: ../timer.h
 PTC08.obj: C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/timer.h
+PTC08.obj: C:/ti/TivaWare_C_Series-2.1.3.156/utils/uartstdio.h
+PTC08.obj: C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdarg.h
 
 ../PTC08.c: 
 ../PTC08.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdint.h: 
+C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/string.h: 
+C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/linkage.h: 
 ../uart.h: 
 C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdbool.h: 
 C:/ti/TivaWare_C_Series-2.1.3.156/inc/hw_memmap.h: 
@@ -33,3 +39,5 @@ C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/interrupt.h:
 ../buffer.h: 
 ../timer.h: 
 C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/timer.h: 
+C:/ti/TivaWare_C_Series-2.1.3.156/utils/uartstdio.h: 
+C:/ti/ccsv7/tools/compiler/ti-cgt-arm_16.9.1.LTS/include/stdarg.h: 

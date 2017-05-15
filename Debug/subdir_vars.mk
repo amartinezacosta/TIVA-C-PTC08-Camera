@@ -14,7 +14,8 @@ C_SRCS += \
 ../main.c \
 ../timer.c \
 ../tm4c123gh6pm_startup_ccs.c \
-../uart.c 
+../uart.c \
+../uartstdio.c 
 
 C_DEPS += \
 ./PTC08.d \
@@ -22,7 +23,8 @@ C_DEPS += \
 ./main.d \
 ./timer.d \
 ./tm4c123gh6pm_startup_ccs.d \
-./uart.d 
+./uart.d \
+./uartstdio.d 
 
 OBJS += \
 ./PTC08.obj \
@@ -30,7 +32,8 @@ OBJS += \
 ./main.obj \
 ./timer.obj \
 ./tm4c123gh6pm_startup_ccs.obj \
-./uart.obj 
+./uart.obj \
+./uartstdio.obj 
 
 OBJS__QUOTED += \
 "PTC08.obj" \
@@ -38,7 +41,8 @@ OBJS__QUOTED += \
 "main.obj" \
 "timer.obj" \
 "tm4c123gh6pm_startup_ccs.obj" \
-"uart.obj" 
+"uart.obj" \
+"uartstdio.obj" 
 
 C_DEPS__QUOTED += \
 "PTC08.d" \
@@ -46,7 +50,8 @@ C_DEPS__QUOTED += \
 "main.d" \
 "timer.d" \
 "tm4c123gh6pm_startup_ccs.d" \
-"uart.d" 
+"uart.d" \
+"uartstdio.d" 
 
 C_SRCS__QUOTED += \
 "../PTC08.c" \
@@ -54,6 +59,7 @@ C_SRCS__QUOTED += \
 "../main.c" \
 "../timer.c" \
 "../tm4c123gh6pm_startup_ccs.c" \
-"../uart.c" 
+"../uart.c" \
+"../uartstdio.c" 
 
 
